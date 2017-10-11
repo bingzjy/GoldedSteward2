@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ly_dialog_opendoor"
+              android:orientation="vertical"
+              android:background="#ffffff"
+              android:layout_gravity="center_horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+    <TextView
+            android:id="@+id/tv_dialog_opendoor_close"
+            android:text="关闭"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="@dimen/font_size_12sp"
+            android:gravity="right"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+<LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:padding="@dimen/dimen_20dp"
+              android:layout_marginLeft="@dimen/dimen_40dp"
+              android:layout_marginRight="@dimen/dimen_40dp"
+              android:layout_marginBottom="@dimen/dimen_20dp"
+              android:orientation="vertical"
+>
+
+    <TextView
+            android:id="@+id/tv_dialog_opendoor_welcome"
+            android:text="@string/welcome_home"
+            android:textColor="@color/green"
+            android:layout_gravity="center"
+            android:textSize="@dimen/font_size_30sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:id="@+id/tv_dialog_opendoor_state"
+            android:text="@string/have_open"
+            android:textColor="@color/gray_deep"
+            android:layout_gravity="center"
+            android:textSize="@dimen/font_size_14sp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:id="@+id/tv_dialog_opendoor_prompt"
+            android:text="@string/warm_prompt"
+            android:textColor="@color/gray_deep"
+            android:layout_gravity="center"
+            android:textSize="@dimen/font_size_16sp"
+            android:gravity="center"
+            android:padding="20dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:id="@+id/tv_dialog_opendoor_arrearage"
+            android:text="          您已欠费223.0元          "
+            android:textColor="@color/gray_deep"
+            android:layout_gravity="center"
+            android:textSize="@dimen/font_size_14sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <TextView
+
+            android:text="** ***** **"
+            android:textColor="@color/gray_deep"
+            android:layout_gravity="center"
+            android:textSize="@dimen/font_size_20sp"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <TextView
+
+            android:text="长按开门按钮，即可开启快捷开门"
+            android:textColor="@color/green"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:gravity="center">
+        <Button
+                android:id="@+id/tv_dialog_opendoor_goArrearage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_dialog_opendoor_btn"
+                android:text="   去看看   "
+                android:textColor="#fff"
+                android:gravity="center"
+                android:textSize="@dimen/dimen_16dp"
+                android:padding="10dp"
+        />
+
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

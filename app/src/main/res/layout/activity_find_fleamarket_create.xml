@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_freamark_creat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_second_titlebar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_32dp"
+        android:background="@color/gray_light_3"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen_8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/frea_market_goods_title"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_size_14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48dp">
+
+        <EditText
+            android:id="@+id/et_frea_market_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/back_edittext_login"
+            android:hint="建议在16字以内"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:textSize="@dimen/font_size_14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_32dp"
+        android:background="@color/gray_light_3"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen_8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/frea_market_goods_price"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_size_14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48dp">
+
+        <EditText
+            android:id="@+id/et_frea_market_new_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/back_edittext_login"
+            android:numeric="integer"
+            android:hint="@string/frea_market_goods_new_price"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:textSize="@dimen/font_size_14sp" />
+
+        <EditText
+            android:id="@+id/et_frea_market_think_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:numeric="integer"
+            android:layout_weight="1"
+            android:background="@drawable/back_edittext_login"
+            android:hint="@string/frea_market_goods_think_price"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:textSize="@dimen/font_size_14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_32dp"
+        android:background="@color/gray_light_3"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen_8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:text="@string/frea_market_pictures"
+            android:textSize="@dimen/font_size_14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_frea_market_picture_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_4dp">
+
+        <GridView
+                android:id="@+id/gridview"
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:horizontalSpacing="3dp"
+                android:numColumns="5"
+                android:scrollbars="none"
+                android:verticalSpacing="5dp" >
+        </GridView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_32dp"
+        android:background="@color/gray_light_3"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen_8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/frea_market_goods_content"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_size_14sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_frea_market_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/back_edittext"
+        android:gravity="top|left"
+        android:lineSpacingExtra="@dimen/dimen_8dp"
+        android:lines="6"
+        android:minHeight="@dimen/dimen_48dp"
+        android:minLines="3"
+        android:padding="@dimen/dimen_4dp"
+        android:textColor="@color/gray_deep"
+        android:textSize="@dimen/dimen_14dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_frea_market_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/back_button_green"
+            android:text="@string/frea_market_publish_comfirm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_16sp" />
+    </LinearLayout>
+</LinearLayout>
